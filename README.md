@@ -32,8 +32,8 @@ Es una biblioteca donde se pueden crear libros, autores y editoriales.
 http://biblioteca-egg.us-east-2.elasticbeanstalk.com/
 
 * Admin -> 
-       email: admin@admin.com
-       password: 12345678
+_ email: admin@admin.com
+_ password: 12345678
 
 
 
