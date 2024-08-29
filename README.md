@@ -1,26 +1,26 @@
 ## Proyecto Biblioteca Egg
 
-Es una biblioteca donde se pueden crear libros, autores y editoriales. 
+Biblioteca Egg es una aplicación que permite gestionar libros, autores y editoriales de manera eficiente.
 
 ## Funcionamiento Login
 
-* Se puede registrar un usuario y logearse. 
-* Tiene la opción para subir una imagen de usuario. 
-* Una vez creado y logueado, cuenta con una función para editar el usuario o cerrar sesión.
+* Los usuarios pueden registrarse y acceder al sistema.
+* Se ofrece la opción de subir una imagen de perfil para personalizar la cuenta.
+* Una vez registrado e iniciado sesión, el usuario puede editar su perfil o cerrar sesión.
 
 
 ## Funcionamiento y Roles
 
-* Existe un rol ADMIN y USER. Una vez que se crea el usuario automáticamente se asigna el rol USER.
-* Para cambiar el Rol, se debe cambiar mediante MySQL Workbench u otra herramienta para realizar un UPDATE del rol.
-* El rol de tipo USER únicamente puede ver las listas de libros, autores y editoriales.
-* El rol de tipo ADMIN puede modificar y crear libros, autores y editoriales. Tiene la opción de ver los usuarios, modificarlos y cambiar el rol.
+* Existen dos roles principales: ADMIN y USER. Por defecto, los nuevos usuarios se asignan al rol USER.
+* Para cambiar el rol de un usuario, es necesario realizar una actualización mediante MySQL Workbench u otra herramienta de administración de bases de datos.
+* Los usuarios con el rol USER tienen acceso solo a la visualización de las listas de libros, autores y editoriales.
+* Los usuarios con el rol ADMIN pueden modificar y crear libros, autores y editoriales, así como ver y gestionar los usuarios, incluyendo la modificación de sus roles.
 
 
 ## Tecnologías
 
-* Java 19
-* Spring Data JPA
+* Java
+* Spring Data JPA 
 * Spring Boot
 * Spring Security
 * Thymeleaf
