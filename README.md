@@ -27,14 +27,6 @@ Es una biblioteca donde se pueden crear libros, autores y editoriales.
 * Spring Web
 * Bootstrap
 
-## DEMO
-
-http://biblioteca-egg.us-east-2.elasticbeanstalk.com/
-
-* Admin -> 
-* email: admin@admin.com
-* password: 12345678
-
 
 
 
