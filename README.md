@@ -34,14 +34,16 @@ Biblioteca Egg es una aplicación donde se puso a prueba varios conceptos acadé
 
 ## Tecnologías
 
-- **Java**
+- **Maven**
 - **Spring Data JPA**
+- **MySQL**
 - **Spring Boot**
+- **Spring Web**
 - **Spring Security**
 - **Thymeleaf**
-- **Spring Web**
 - **Bootstrap**
 - **Docker**
+  
 
 ## Estructura
 
