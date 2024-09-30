@@ -10,11 +10,11 @@
 	</parent>
 	<groupId>com.egg</groupId>
 	<artifactId>biblioteca</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>biblioteca</name>
 	<description>Proyecto en Biblioteca</description>
 	<properties>
-		<java.version>19</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
