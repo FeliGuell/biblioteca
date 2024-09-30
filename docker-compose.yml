@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  biblioteca:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    mem_limit: 512m
+    ports:
+      - "8080:8080"
+    environment:
+      DATABASE_URL: jdbc:mysql://mysqldb:3306/biblioteca?createDatabaseIfNotExist=true&serverTimezone=UTC
+      DATABASE_USERNAME: root
+      DATABASE_PASSWORD: root
+      DATABASE_DRIVER: com.mysql.cj.jdbc.Driver
+    restart: always
+    depends_on:
+      mysqldb:
+        condition: service_healthy
+
+  mysqldb:
+    image: mysql:8.0.31
+    ports:
+        - "3306-3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: biblioteca
+    volumes:
+      - ./biblioteca:/var/lib/mysql
+    restart: always
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 10s
+      retries: 10
